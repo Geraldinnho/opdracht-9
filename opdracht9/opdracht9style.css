@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Goldman", cursive;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
+/* TITELS CENTREREN */
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* SECTION CONTENT LAYOUT */
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* AFBEELDING */
+.section-image img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* TEKST */
+.section-text {
+  max-width: 600px;
+}
+
+.section-text h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-text p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* RUIMTE TUSSEN TITEL EN CONTENT */
+.section-content {
+  margin-top: 3rem;
+}
+
+/* ZORGEN DAT TEKST NIET TEGEN RAND STAAT */
+body {
+  padding: 2rem;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem;
+  position: relative; /* nodig voor dropdown positioning */
+}
+
+/* SUBMENU STANDAARD VERBORGEN */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  width: 14rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* LINKS IN SUBMENU */
+.dropdown li a {
+  display: block;
+  color: black;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+
+/* TONEN BIJ HOVER OP JAAR 2 */
+.jaar2:hover .dropdown {
+  display: block;
+}
+
+/* JAAR 2 BLAUW + WITTE ACHTERGROND BIJ HOVER */
+.jaar2:hover > a {
+  color: blue;
+  background: white;
+}
+
+/* HOVER-EFFECT OP SUBMENU-ITEMS */
+.dropdown li:hover {
+  background: #e9e9e9;
+}
+/* Zorg dat Jaar 2 dezelfde breedte heeft als de dropdown */
+.jaar2 > a {
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+/* Dropdown exact onder Jaar 2 */
+.dropdown {
+  position: absolute;
+  top: 100%;        /* direct onder de link */
+  left: 0;          /* precies uitgelijnd met de link */
+  width: 100%;      /* zelfde breedte als Jaar 2 */
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Submenu-items netjes */
+.dropdown li a {
+  display: block;
+  padding: 0.8rem 1.5rem; /* zelfde horizontale padding als Jaar 2 */
+  color: black;
+  text-decoration: none;
+}
